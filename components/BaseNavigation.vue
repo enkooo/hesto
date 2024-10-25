@@ -20,6 +20,6 @@ const MENU_ITEMS = computed(() => [
       </li>
     </ul>
   </nav>
-  <LocaleSelector />
+  <LangSwitcher />
   <NuxtLinkLocale to="/project-pricing">{{ $t('menu.project-pricing') }}</NuxtLinkLocale>
 </template>

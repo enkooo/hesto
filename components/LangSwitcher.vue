@@ -1,19 +1,18 @@
 <script setup>
-import { ref } from 'vue'
-
 const { locale, locales, setLocale } = useI18n()
 const selectedLocale = ref(locale.value)
 
-const updateLocale = (newLocale) => {
-  setLocale(newLocale)
-}
+const lang = computed({
+  get: () => selectedLocale.value,
+  set: (value) => {
+    selectedLocale.value = value
+    setLocale(value)
+  },
+})
 </script>
 
 <template>
-  <Select
-    v-model="selectedLocale"
-    @update:model-value="updateLocale"
-  >
+  <Select v-model="lang">
     <SelectTrigger class="w-16 border-none">
       <SelectValue>
         {{ selectedLocale.toUpperCase() }}
