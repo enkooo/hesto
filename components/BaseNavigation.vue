@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
+const { t } = useI18n()
 
-const { locale, setLocale } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
+const MENU_ITEMS = computed(() => [
+  { text: t('menu.home'), ssrLink: true, path: t('links.home') },
+  { text: t('menu.about'), ssrLink: true, path: t('links.about') },
+  { text: t('menu.services'), ssrLink: true, path: t('links.services') },
+  { text: t('menu.contact'), ssrLink: true, path: t('links.contact') },
+])
 </script>
 
 <template>
-  <div>
-    <div>
-      <button @click="setLocale('en')">en</button>
-      <button @click="setLocale('pl')">pl</button>
-      locale:{{ locale }}
-      <p>{{ $t('welcome') }}</p>
-      <p>{{ $t('hello') }}</p>
-
-      <p>---------</p>
-
-      <NuxtLink :to="switchLocalePath('pl')">Polish</NuxtLink>
-      <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
-
-      <Button>Click me2</Button>
-    </div>
-  </div>
+  <nav>
+    <ul>
+      <li
+        v-for="item in MENU_ITEMS"
+        :key="item.text"
+      >
+        <NuxtLinkLocale :to="item.path">{{ item.text }}</NuxtLinkLocale>
+      </li>
+    </ul>
+  </nav>
+  <LocaleSelector />
+  <NuxtLinkLocale to="/project-pricing">{{ $t('menu.project-pricing') }}</NuxtLinkLocale>
 </template>

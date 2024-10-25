@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxtjs/i18n',
+    'shadcn-nuxt',
   ],
 
   typescript: {
@@ -17,7 +18,35 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    locales: ['en', 'pl'],
-    defaultLocale: 'pl',
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+      },
+      {
+        code: 'pl',
+        name: 'Polski',
+      },
+    ],
+    defaultLocale: 'en',
+    customRoutes: 'config',
+    pages: {
+      'project-pricing': {
+        en: '/project-pricing',
+        pl: '/wycena-projektu',
+      },
+    },
+  },
+
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui',
   },
 })
