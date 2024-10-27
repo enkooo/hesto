@@ -16,9 +16,8 @@ function onToggleMenu() {
 </script>
 
 <template>
-  <!-- TODO: maybe better option is use 3 grid columns -->
   <header
-    class="sticky top-0 z-50 bg-white md:border-b md:border-gray-200 md:bg-background/75 md:backdrop-blur"
+    class="sticky top-0 z-50 border-b bg-white md:border-gray-200 md:bg-background/75 md:backdrop-blur"
   >
     <nav class="container flex items-center justify-between py-5">
       <NuxtLinkLocale to="/">
@@ -39,7 +38,7 @@ function onToggleMenu() {
           <li
             v-for="item in MENU_ITEMS"
             :key="item.text"
-            class="first:text-typography"
+            class="first:text-typography hover:underline"
           >
             <NuxtLinkLocale
               :to="item.path"
@@ -55,7 +54,7 @@ function onToggleMenu() {
           </li>
         </ul>
       </div>
-      <div class="flex items-center gap-6 md:block">
+      <div class="flex items-center gap-2 md:block">
         <div class="gap-1 md:flex md:items-center">
           <LangSwitcher />
           <NuxtLinkLocale
@@ -70,21 +69,15 @@ function onToggleMenu() {
             </Button>
           </NuxtLinkLocale>
         </div>
-        <div class="flex w-8 items-center md:hidden">
-          <Icon
-            v-show="!isOpen"
-            class="cursor-pointer md:hidden"
-            size="30"
-            name="mdi:menu"
-            @click="onToggleMenu"
-          />
-
-          <Icon
-            v-show="isOpen"
-            size="30"
-            name="mdi:window-close"
-            @click="onToggleMenu"
-          />
+        <div class="flex items-center md:hidden">
+          <Button variant="ghost">
+            <Icon
+              class="cursor-pointer md:hidden"
+              size="30"
+              :name="!isOpen ? 'mdi:menu' : 'mdi:close'"
+              @click="onToggleMenu"
+            />
+          </Button>
         </div>
       </div>
     </nav>

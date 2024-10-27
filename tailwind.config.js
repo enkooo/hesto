@@ -54,7 +54,7 @@ module.exports = {
         typography: {
           DEFAULT: 'hsl(0, 0%, 0%)',
           white: 'hsl(0, 0%, 100%)',
-          gray: 'hsla(0, 0%, 0%, 0.35)',
+          gray: 'hsl(0, 0%, 53%)',
           blue: 'hsl(219, 33%, 25%)',
         },
       },
@@ -87,6 +87,12 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'collapsible-down': 'collapsible-down 0.2s ease-in-out',
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
+      },
+      fontFamily: {
+        primary: ['Plus Jakarta Sans'],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.png')",
       },
     },
   },
