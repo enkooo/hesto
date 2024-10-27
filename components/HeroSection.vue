@@ -39,7 +39,7 @@ const onScrollDown = () => {
       </div>
       <Button
         variant="ghost"
-        class="absolute bottom-7 left-1/2"
+        class="absolute bottom-7 left-1/2 -translate-x-1/2"
         @click="onScrollDown"
       >
         <NuxtImg
