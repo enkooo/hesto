@@ -13,7 +13,7 @@ const lang = computed({
 
 <template>
   <Select v-model="lang">
-    <SelectTrigger class="w-16 border-none">
+    <SelectTrigger class="w-16 border-none bg-transparent">
       <SelectValue>
         {{ selectedLocale.toUpperCase() }}
       </SelectValue>

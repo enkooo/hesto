@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/i18n',
     'shadcn-nuxt',
+    '@formkit/auto-animate/nuxt',
   ],
 
   typescript: {
