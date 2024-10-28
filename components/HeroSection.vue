@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const { t } = useI18n()
-
 const onScrollDown = () => {
   window.scrollTo({
     top: window.innerHeight - 80,
@@ -10,17 +8,17 @@ const onScrollDown = () => {
 </script>
 
 <template>
-  <div class="bg-hero-pattern bg-cover">
+  <div class="bg-hero-pattern relative overflow-hidden bg-cover">
     <div
-      class="container flex h-[calc(100dvh-80px)] max-w-7xl flex-col items-center justify-center gap-12 md:text-center"
+      class="container flex h-[calc(100dvh-40px)] max-w-7xl flex-col items-center justify-center gap-12 md:text-center"
     >
-      <h1 class="text-5xl font-bold lg:text-[4rem]">
-        {{ t('hero.title.start') }}
-        <span class="text-primary">{{ t('hero.title.highlight') }}</span>
-        {{ t('hero.title.end') }}
+      <h1 class="-mt-10 text-5xl font-bold lg:text-[4rem]">
+        {{ $t('hero.title.start') }}
+        <span class="text-primary">{{ $t('hero.title.highlight') }}</span>
+        {{ $t('hero.title.end') }}
       </h1>
-      <p class="text-typography-gray text-balance md:px-16">
-        {{ t('hero.description') }}
+      <p class="text-typography-light text-balance md:px-16">
+        {{ $t('hero.description') }}
       </p>
       <div class="flex w-full items-center justify-center gap-4">
         <Button
@@ -28,18 +26,18 @@ const onScrollDown = () => {
           size="lg"
           class="flex-1 sm:max-w-52"
         >
-          {{ t('hero.buttons.offer') }}
+          {{ $t('hero.buttons.offer') }}
         </Button>
         <Button
           size="lg"
           class="flex-1 sm:max-w-52"
         >
-          {{ t('hero.buttons.projects') }}
+          {{ $t('hero.buttons.projects') }}
         </Button>
       </div>
       <Button
         variant="ghost"
-        class="absolute bottom-7 left-1/2 -translate-x-1/2"
+        class="absolute bottom-14 left-1/2 -translate-x-1/2 md:bottom-20"
         @click="onScrollDown"
       >
         <NuxtImg
@@ -53,12 +51,12 @@ const onScrollDown = () => {
     <NuxtImg
       src="/img/bacground-bubble.svg"
       alt=""
-      class="absolute -bottom-1/2 -left-1/2 size-full"
+      class="absolute -bottom-1/2 -left-1/2 -z-10 size-full"
     />
     <NuxtImg
       src="/img/bacground-bubble.svg"
       alt=""
-      class="absolute -right-1/3 -top-1/3 size-full"
+      class="absolute -right-1/3 -top-1/3 -z-10 size-full"
     />
   </div>
 </template>

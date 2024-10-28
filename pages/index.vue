@@ -3,6 +3,7 @@
 <template>
   <main>
     <HeroSection />
+    <AboutSection />
   </main>
 </template>
 

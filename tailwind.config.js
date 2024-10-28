@@ -54,7 +54,7 @@ module.exports = {
         typography: {
           DEFAULT: 'hsl(0, 0%, 0%)',
           white: 'hsl(0, 0%, 100%)',
-          gray: 'hsl(0, 0%, 53%)',
+          light: 'hsl(0, 0%, 53%)',
           blue: 'hsl(219, 33%, 25%)',
         },
       },
