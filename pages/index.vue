@@ -4,6 +4,7 @@
   <main>
     <HeroSection />
     <AboutSection />
+    <OfferSection />
   </main>
 </template>
 

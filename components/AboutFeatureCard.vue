@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="h-full rounded-md bg-white p-5 shadow-xl">
+  <div class="h-full rounded-md bg-white p-7 shadow-xl">
     <div class="flex items-center justify-start gap-2">
       <Icon
         :name="icon"
@@ -16,6 +16,6 @@ defineProps<{
       />
       <h4 class="font-bold">{{ title }}</h4>
     </div>
-    <p class="text-typography-light mt-2 text-left text-sm">{{ description }}</p>
+    <p class="text-typography-gray mt-2 text-left text-sm">{{ description }}</p>
   </div>
 </template>

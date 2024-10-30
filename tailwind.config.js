@@ -54,7 +54,8 @@ module.exports = {
         typography: {
           DEFAULT: 'hsl(0, 0%, 0%)',
           white: 'hsl(0, 0%, 100%)',
-          light: 'hsl(0, 0%, 45%)',
+          gray: 'hsl(0, 0%, 45%)',
+          light: 'hsl(0, 0%, 55%)',
           blue: 'hsl(219, 33%, 25%)',
         },
       },
@@ -93,6 +94,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/img/hero-pattern.png')",
+        'services-dark-gradient': 'linear-gradient(180deg, #191F2F 0%, #0C101A 100%)',
       },
     },
   },

@@ -8,7 +8,7 @@ const onScrollDown = () => {
 </script>
 
 <template>
-  <div class="bg-hero-pattern relative overflow-hidden bg-cover">
+  <div class="relative overflow-hidden bg-hero-pattern bg-cover">
     <div
       class="container flex h-[calc(100dvh-40px)] max-w-7xl flex-col items-center justify-center gap-12 md:text-center"
     >
@@ -17,7 +17,7 @@ const onScrollDown = () => {
         <span class="text-primary">{{ $t('hero.title.highlight') }}</span>
         {{ $t('hero.title.end') }}
       </h1>
-      <p class="text-typography-light text-balance md:px-16">
+      <p class="text-typography-gray text-balance md:px-16">
         {{ $t('hero.description') }}
       </p>
       <div class="flex w-full items-center justify-center gap-4">

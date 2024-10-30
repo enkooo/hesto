@@ -22,7 +22,7 @@ defineProps<{
       <div class="absolute top-[52px] h-10 w-28 rounded-xl backdrop-blur" />
     </div>
     <h4 class="font-bold">{{ title }}</h4>
-    <p class="text-typography-light text-sm">
+    <p class="text-typography-gray text-sm">
       {{ description }}
     </p>
   </div>

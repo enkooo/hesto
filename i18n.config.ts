@@ -89,6 +89,54 @@ export default defineI18nConfig(() => ({
           },
         },
       },
+      offer: {
+        title: 'Our offer',
+        subtitle:
+          'We provide tailored software solutions to meet the diverse needs of businesses at different stages of growth.',
+        benefits: 'Benefits',
+        learnMore: 'Learn more',
+        items: {
+          mvp: {
+            title: 'Minimum Viable Product (MVP) Applications',
+            description:
+              'Our MVP development services are ideal for startups and businesses looking to validate their ideas quickly.',
+            benefits: {
+              0: 'Rapid deployment of core features',
+              1: 'Reduced development costs',
+              2: 'Focused user experience',
+              3: 'Efficient feedback loops',
+            },
+            summary:
+              'Let us create an application that meets the key needs of your business, allowing you to enter the market quickly with minimal costs.',
+          },
+          custom: {
+            title: 'Custom Business Applications',
+            description:
+              'We specialize in developing custom applications tailored to your business requirements.',
+            benefits: {
+              0: 'Fully customized solutions',
+              1: 'Integration with existing systems',
+              2: 'Scalable architecture',
+              3: 'Enhanced user experience',
+            },
+            summary:
+              'We will design an application specifically tailored to your requirements and business goals to support your growth and efficiency.',
+          },
+          digitalization: {
+            title: 'Applications for Digitalizing Business Processes',
+            description:
+              'Digitize your business processes with advanced applications designed to improve efficiency.',
+            benefits: {
+              0: 'Streamlined operations',
+              1: 'Enhanced accuracy and consistency',
+              2: 'Improved data-driven decision-making',
+              3: 'Cost savings from reduced manual work',
+            },
+            summary:
+              'Simplify your business management with solutions that automate and digitalize key processes, boosting efficiency and reducing costs.',
+          },
+        },
+      },
     },
     pl: {
       menu: {
@@ -174,6 +222,54 @@ export default defineI18nConfig(() => ({
             title: 'Elastyczność',
             description:
               'Dostosowujemy się do Twoich potrzeb. Oferujemy indywidualne podejście i rozwiązania szyte na miarę Twojego biznesu.',
+          },
+        },
+      },
+      offer: {
+        title: 'Nasza oferta',
+        subtitle:
+          'Dostarczamy dostosowane rozwiązania programistyczne, aby sprostać różnorodnym potrzebom firm na różnych etapach rozwoju.',
+        benefits: 'Korzyści',
+        learnMore: 'Dowiedz się więcej',
+        items: {
+          mvp: {
+            title: 'Aplikacje Minimum Viable Product (MVP)',
+            description:
+              'Nasze usługi tworzenia MVP są idealne dla startupów i firm, które chcą szybko zweryfikować swoje pomysły.',
+            benefits: {
+              0: 'Szybkie wdrożenie podstawowych funkcji',
+              1: 'Zmniejszenie kosztów produkcji',
+              2: 'Skoncentrowane na doświadczeniu użytkownika',
+              3: 'Efektywne cykle zbierania opinii',
+            },
+            summary:
+              'Pozwól nam stworzyć aplikację, która spełni kluczowe potrzeby Twojego biznesu, pozwalając na szybkie wejście na rynek z minimalnymi kosztami.',
+          },
+          custom: {
+            title: 'Dedykowane aplikacje dla biznesu',
+            description:
+              'Specjalizujemy się w tworzeniu aplikacji dostosowanych do potrzeb Twojej firmy.',
+            benefits: {
+              0: 'W pełni dostosowane rozwiązania',
+              1: 'Integracja z istniejącymi systemami',
+              2: 'Skalowalna architektura',
+              3: 'Zwiększona wygoda użytkowania',
+            },
+            summary:
+              'Zaprojektujemy aplikację specjalnie dostosowaną do Twoich wymagań i celów biznesowych, aby wspierać Twój rozwój i efektywność.',
+          },
+          digitalization: {
+            title: 'Aplikacje do digitalizacji procesów biznesowych',
+            description:
+              'Zdigitalizuj swoje procesy biznesowe za pomocą zaawansowanych aplikacji zaprojektowanych w celu poprawy efektywności.',
+            benefits: {
+              0: 'Usprawnione operacje',
+              1: 'Zwiększona dokładność i spójność',
+              2: 'Lepsze decyzje oparte na danych',
+              3: 'Oszczędności dzięki redukcji pracy ręcznej',
+            },
+            summary:
+              'Ułatw sobie zarządzanie firmą dzięki rozwiązaniom, które automatyzują i digitalizują kluczowe procesy, zwiększając wydajność i redukując koszty.',
           },
         },
       },
