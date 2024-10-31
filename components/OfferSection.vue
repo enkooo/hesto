@@ -49,13 +49,15 @@ const OFFER_SECTION_ITEMS = computed(() => [
     <div class="container flex flex-col gap-6 py-20">
       <h2 class="text-4xl font-bold">{{ $t('offer.title') }}</h2>
       <p class="text-typography-light">{{ $t('offer.subtitle') }}</p>
-      <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+      <div class="mt-14 grid justify-center gap-5 md:grid-cols-4 lg:grid-cols-6 lg:gap-10">
         <div
-          v-for="offer in OFFER_SECTION_ITEMS"
+          v-for="(offer, index) in OFFER_SECTION_ITEMS"
           :key="offer.id"
+          class="col-span-2"
+          :class="{ 'md:col-start-2 lg:col-start-auto': index === OFFER_SECTION_ITEMS.length - 1 }"
         >
           <div
-            class="h-full w-full rounded-xl bg-gradient-to-tr from-[#6276a052] via-[#151A26] to-[#008B84] p-[1px]"
+            class="h-full w-full max-w-[435px] rounded-xl bg-gradient-to-tr from-[#6276a052] via-[#151A26] to-[#008B84] p-[1px]"
           >
             <div
               class="bg-services-dark-gradient flex h-full w-full items-center justify-center rounded-xl"
