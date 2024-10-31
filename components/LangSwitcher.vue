@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const { locale, locales, setLocale } = useI18n()
 const selectedLocale = ref(locale.value)
 
