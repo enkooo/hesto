@@ -17,7 +17,7 @@ const onScrollDown = () => {
         <span class="text-primary">{{ $t('hero.title.highlight') }}</span>
         {{ $t('hero.title.end') }}
       </h1>
-      <p class="text-typography-gray text-balance md:px-16">
+      <p class="text-balance text-typography-gray md:px-16">
         {{ $t('hero.description') }}
       </p>
       <div class="flex w-full items-center justify-center gap-4">

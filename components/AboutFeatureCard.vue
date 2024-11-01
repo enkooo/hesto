@@ -16,6 +16,6 @@ defineProps<{
       />
       <h4 class="font-bold">{{ title }}</h4>
     </div>
-    <p class="text-typography-gray mt-2 text-left text-sm">{{ description }}</p>
+    <p class="mt-2 text-left text-sm text-typography-gray">{{ description }}</p>
   </div>
 </template>

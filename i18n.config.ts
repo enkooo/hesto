@@ -137,6 +137,34 @@ export default defineI18nConfig(() => ({
           },
         },
       },
+      services: {
+        title: 'Projects',
+        description:
+          'Here are selected projects we have completed for our clients. Each of them is a tailored solution, designed to meet the specific needs of the industry and its users. With our advanced technologies and dedicated approach, we help companies achieve better results and build a competitive advantage.',
+        items: [
+          {
+            title: 'Grocero',
+            subtitle: 'Platform for FMCG Network Management',
+            description:
+              'GroCero is a modern platform that enables supply chain management and optimization in the FMCG sector. With advanced analytical tools, GroCero helps retail companies efficiently plan inventory, monitor sales, and automate orders, leading to increased efficiency and time savings.',
+            buttonLabel: 'Case Study',
+          },
+          {
+            title: 'Food Planner',
+            subtitle: 'Meal Planning Platform',
+            description:
+              'Food Planner is an application designed for people who care about healthy eating habits. It allows users to create personalized meal plans, calculate nutritional values, and manage shopping lists. With this tool, users can effectively control their diet and achieve their health goals.',
+            buttonLabel: 'Case Study',
+          },
+          {
+            title: 'Shape of Emotions',
+            subtitle: 'Mobile App for the Center for Psychotherapy and Personal Development',
+            description:
+              'Shape of Emotions is an app supporting the process of therapy and personal development, developed in collaboration with the Center for Psychotherapy and Development. Users can track their emotions, log daily experiences, and analyze their progress. The app fosters self-awareness and provides access to therapeutic tools.',
+            buttonLabel: 'Case Study',
+          },
+        ],
+      },
     },
     pl: {
       menu: {
@@ -272,6 +300,34 @@ export default defineI18nConfig(() => ({
               'Ułatw sobie zarządzanie firmą dzięki rozwiązaniom, które automatyzują i digitalizują kluczowe procesy, zwiększając wydajność i redukując koszty.',
           },
         },
+      },
+      services: {
+        title: 'Realizacje',
+        description:
+          'Przedstawiamy wybrane projekty, które realizowaliśmy dla naszych klientów. Każdy z nich to indywidualnie dopasowane rozwiązanie, odpowiadające na specyficzne potrzeby branży i użytkowników. Dzięki naszym zaawansowanym technologiom oraz dedykowanemu podejściu, pomagamy firmom osiągać lepsze rezultaty i budować przewagę konkurencyjną.',
+        items: [
+          {
+            title: 'Grocero',
+            subtitle: 'Platforma do zarządzania siecią FMCG',
+            description:
+              'GroCero to nowoczesna platforma, która umożliwia zarządzanie i optymalizację łańcucha dostaw w sektorze FMCG. Dzięki zaawansowanym narzędziom analitycznym, GroCero pomaga firmom detalicznym efektywnie planować zapasy, monitorować sprzedaż oraz automatyzować zamówienia, co przekłada się na zwiększoną wydajność i oszczędność czasu.',
+            buttonLabel: 'Case Study',
+          },
+          {
+            title: 'Food Planner',
+            subtitle: 'Platforma do planowania posiłków',
+            description:
+              'Food Planner to aplikacja dedykowana osobom dbającym o zdrowe nawyki żywieniowe. Umożliwia tworzenie spersonalizowanych planów żywieniowych, przeliczanie wartości odżywczych oraz zarządzanie listami zakupów. Dzięki temu narzędziu użytkownicy mogą skutecznie kontrolować swoją dietę i osiągać cele zdrowotne.',
+            buttonLabel: 'Case Study',
+          },
+          {
+            title: 'Kształt Emocji',
+            subtitle: 'Aplikacja mobilna dla Centrum Psychoterapii i Rozwoju Osobistego',
+            description:
+              'Kształt Emocji to aplikacja wspierająca proces terapii i rozwoju osobistego, opracowana we współpracy z Centrum Psychoterapii i Rozwoju. Użytkownicy mogą śledzić swoje emocje, zapisywać codzienne doświadczenia i analizować swoje postępy. Aplikacja wspiera budowanie samoświadomości i umożliwia dostęp do narzędzi terapeutycznych.',
+            buttonLabel: 'Case Study',
+          },
+        ],
       },
     },
   },

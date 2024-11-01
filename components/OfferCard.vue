@@ -14,7 +14,7 @@ defineProps<{
       class="h-full w-full max-w-[435px] rounded-xl bg-gradient-to-tr from-[#6276a052] via-[#151A26] to-[#008B84] p-[1px]"
     >
       <div
-        class="bg-services-dark-gradient flex h-full w-full items-center justify-center rounded-xl"
+        class="flex h-full w-full items-center justify-center rounded-xl bg-services-dark-gradient"
       >
         <div
           class="relative z-10 flex h-full flex-col gap-8 overflow-hidden rounded-xl bg-gradient-to-b from-[#1e2534] to-[#101421] p-8 text-typography-light shadow-[0px_16px_25px_0px_rgba(0,0,0,0.06)]"
