@@ -45,11 +45,11 @@ const OFFER_SECTION_ITEMS = computed(() => [
 </script>
 
 <template>
-  <div class="-mt-10 min-h-screen bg-services-dark-gradient pt-10 text-white">
+  <div class="-mt-10 min-h-screen bg-services-dark-gradient py-10 text-white">
     <div class="container flex flex-col gap-6 py-20">
       <h2 class="text-4xl font-bold">{{ $t('offer.title') }}</h2>
       <p class="text-typography-light">{{ $t('offer.subtitle') }}</p>
-      <div class="mt-14 grid justify-center gap-5 md:grid-cols-4 lg:grid-cols-6 lg:gap-10">
+      <div class="mt-14 grid justify-center gap-5 gap-y-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-10">
         <OfferCard
           v-for="(offer, index) in OFFER_SECTION_ITEMS"
           :key="offer.id"

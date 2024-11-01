@@ -5,7 +5,6 @@
     <HeroSection />
     <AboutSection />
     <OfferSection />
+    <ServicesSection />
   </main>
 </template>
-
-<style scoped></style>
