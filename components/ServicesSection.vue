@@ -33,25 +33,23 @@ const SERVICES_SECTION_ITEMS = computed(() => [
 </script>
 
 <template>
-  <div class="-mt-10 min-h-screen rounded-3xl bg-white pt-16 shadow-2xl">
-    <div class="container">
-      <section class="text-center">
-        <h2 class="text-3xl font-bold">{{ $t('services.title') }}</h2>
-        <p class="mt-7 text-typography-gray">{{ $t('services.subtitle') }}</p>
-      </section>
-      <div>
-        <ServicesProjectSection
-          v-for="(service, index) in SERVICES_SECTION_ITEMS"
-          :key="service.id"
-          :description="service.description"
-          :img-src="service.imgSrc"
-          :is-even="(index + 1) % 2 === 0"
-          :logo-src="service.logoSrc"
-          :subtitle="service.subtitle"
-          :title="service.title"
-          :button-label="service.buttonLabel"
-        />
-      </div>
+  <div class="container">
+    <section class="text-center">
+      <h2 class="text-3xl font-bold">{{ $t('services.title') }}</h2>
+      <p class="mt-7 text-typography-gray">{{ $t('services.subtitle') }}</p>
+    </section>
+    <div>
+      <ServicesProjectSection
+        v-for="(service, index) in SERVICES_SECTION_ITEMS"
+        :key="service.id"
+        :description="service.description"
+        :img-src="service.imgSrc"
+        :is-even="(index + 1) % 2 === 0"
+        :logo-src="service.logoSrc"
+        :subtitle="service.subtitle"
+        :title="service.title"
+        :button-label="service.buttonLabel"
+      />
     </div>
   </div>
 </template>

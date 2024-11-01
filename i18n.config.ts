@@ -63,7 +63,8 @@ export default defineI18nConfig(() => ({
         },
       },
       whyChooseUs: {
-        heading: 'Why Choose Us?',
+        heading:
+          'Why <span class="text-primary">you</span> should <span class="text-primary">choose</span> us?',
         description:
           'We explain why we are the best choice for your business. With us, you get comprehensive service, highest quality, and satisfaction guarantee.',
         values: {
@@ -149,7 +150,7 @@ export default defineI18nConfig(() => ({
               'Grocero is a modern platform that enables supply chain management and optimization in the FMCG sector. With advanced analytical tools, Grocero helps retail companies efficiently plan inventory, monitor sales, and automate orders, leading to increased efficiency and time savings.',
             buttonLabel: 'Case Study',
           },
-          foodFlanner: {
+          foodPlanner: {
             title: 'Food Planner',
             subtitle: 'Meal Planning Platform',
             description:
@@ -164,6 +165,12 @@ export default defineI18nConfig(() => ({
             buttonLabel: 'Case Study',
           },
         },
+      },
+      projectPricing: {
+        heading: 'Modernize Your <span class="text-primary">Business</span>!',
+        shortText:
+          'Elevate your business to the next level with tailored, modern solutions that enhance brand value and streamline operations. We specialize in creating digital transformations that deliver measurable results.',
+        buttonLabel: 'Project Pricing',
       },
     },
     pl: {
@@ -227,7 +234,8 @@ export default defineI18nConfig(() => ({
         },
       },
       whyChooseUs: {
-        heading: 'Dlaczego warto nas wybrać?',
+        heading:
+          'Dlaczego <span class="text-primary">warto</span> nas <span class="text-primary">wybrać</span>?',
         description:
           'Wyjaśniamy dlaczego jesteśmy najlepszym wyborem dla Twojego biznesu. Z nami otrzymasz kompleksową obsługę, najwyższą jakość usług i gwarancję zadowolenia.',
         values: {
@@ -328,6 +336,12 @@ export default defineI18nConfig(() => ({
             buttonLabel: 'Case Study',
           },
         },
+      },
+      projectPricing: {
+        heading: 'Unowocześnij swój <span class="text-primary">biznes</span>!',
+        shortText:
+          'Wznieś swoją firmę na wyższy poziom dzięki dostosowanym, nowoczesnym rozwiązaniom, które podnoszą wartość marki i usprawniają operacje. Specjalizujemy się w tworzeniu transformacji cyfrowych, które przynoszą wymierne rezultaty.',
+        buttonLabel: 'Wycena projektu',
       },
     },
   },

@@ -88,7 +88,10 @@ const BENEFIT_SECTION_ITEMS = computed(() => [
       </div>
     </div>
     <div class="container mt-28 text-center">
-      <h3 class="text-3xl font-bold text-black">{{ $t('whyChooseUs.heading') }}</h3>
+      <h3
+        class="text-3xl font-bold text-black"
+        v-html="$t('whyChooseUs.heading')"
+      />
       <p class="mt-7 text-typography-gray md:px-16">{{ $t('whyChooseUs.description') }}</p>
       <div
         class="mt-14 flex flex-col place-items-center items-center justify-center gap-10 px-5 sm:grid sm:grid-cols-2 sm:gap-10 md:px-32 lg:grid-cols-4 lg:px-0"
