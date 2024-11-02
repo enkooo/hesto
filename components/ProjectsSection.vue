@@ -33,12 +33,12 @@ const PROJECTS_SECTION_ITEMS = computed(() => [
 </script>
 
 <template>
-  <div
-    :id="$t('links.projects').split('#')[1]"
-    class="container"
-  >
-    <section class="text-center">
-      <h2 class="text-3xl font-bold">{{ $t('projects.title') }}</h2>
+  <div class="container">
+    <section
+      :id="$t('links.projects').split('#')[1]"
+      class="text-center"
+    >
+      <h2 class="pt-20 text-3xl font-bold">{{ $t('projects.title') }}</h2>
       <p class="mt-7 text-typography-gray">{{ $t('projects.subtitle') }}</p>
     </section>
     <div>
