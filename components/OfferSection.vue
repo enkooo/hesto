@@ -45,7 +45,10 @@ const OFFER_SECTION_ITEMS = computed(() => [
 </script>
 
 <template>
-  <div class="-mt-10 min-h-screen bg-services-dark-gradient py-10 text-white">
+  <div
+    :id="$t('links.offer').split('#')[1]"
+    class="-mt-10 min-h-screen bg-services-dark-gradient py-10 text-white"
+  >
     <div class="container flex flex-col gap-6 py-20">
       <h2 class="text-4xl font-bold">{{ $t('offer.title') }}</h2>
       <p class="text-typography-light">{{ $t('offer.subtitle') }}</p>

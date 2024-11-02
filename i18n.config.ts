@@ -6,14 +6,16 @@ export default defineI18nConfig(() => ({
       menu: {
         home: 'Home',
         about: 'About Us',
-        services: 'Services',
+        offer: 'Offer',
+        projects: 'Projects',
         contact: 'Contact',
         'project-pricing': 'Project Pricing',
       },
       links: {
         home: '/',
         about: '/#about',
-        services: '/#services',
+        offer: '/#offer',
+        projects: '/#projects',
         contact: '/#contact',
         'project-pricing': '/project-pricing',
       },
@@ -26,7 +28,7 @@ export default defineI18nConfig(() => ({
         description:
           'Accelerate your company’s growth with innovative technologies and effective strategies. We offer comprehensive support in implementing projects that help you gain a competitive edge.',
         buttons: {
-          offer: 'Our Services',
+          offer: 'Our offer',
           projects: 'Projects',
         },
       },
@@ -138,7 +140,7 @@ export default defineI18nConfig(() => ({
           },
         },
       },
-      services: {
+      projects: {
         title: 'Projects',
         subtitle:
           'Here are selected projects we have completed for our clients. Each of them is a tailored solution, designed to meet the specific needs of the industry and its users. With our advanced technologies and dedicated approach, we help companies achieve better results and build a competitive advantage.',
@@ -172,19 +174,81 @@ export default defineI18nConfig(() => ({
           'Elevate your business to the next level with tailored, modern solutions that enhance brand value and streamline operations. We specialize in creating digital transformations that deliver measurable results.',
         buttonLabel: 'Project Pricing',
       },
+      contactForm: {
+        heading: 'Contact',
+        subheading:
+          'If you have any questions about our offer or want to learn more about our services, please contact us. We are here to help and happy to assist you in choosing the best solutions for your company.',
+        fields: {
+          name: 'Name and Surname',
+          email: 'Email Address',
+          phone: 'Phone Number',
+          messageType: 'Type of Message',
+          messageTitle: 'Title',
+          messageContent: 'Content',
+        },
+        messageTypes: {
+          quoteInquiry: 'Quote Inquiry',
+          supportRequest: 'Support Request',
+          generalQuestion: 'General Question',
+          feedback: 'Feedback',
+          partnershipInquiry: 'Partnership Inquiry',
+          technicalIssue: 'Technical Issue',
+        },
+        exampleTitle: 'Inquiry about creating a website for a local company',
+        buttons: {
+          clear: 'Clear',
+          send: 'Send',
+        },
+        checkbox:
+          'I consent to the processing of my personal data in accordance with the privacy policy in order to receive a response to my inquiry and further contact related to my request.',
+      },
+      footer: {
+        navigation: {
+          home: {
+            link: '/',
+            text: 'Home',
+          },
+          about: {
+            link: '/#about',
+            text: 'About Us',
+          },
+          offer: {
+            link: '/#offer',
+            text: 'Offer',
+          },
+          projects: {
+            link: '/#projects',
+            text: 'Projects',
+          },
+          contact: {
+            link: '/#contact',
+            text: 'Contact',
+          },
+        },
+        copyright: 'Copyright 2024 HESTO. All rights reserved.',
+        cookies: 'This site uses cookies in accordance with the privacy policy.',
+        companyDetails: {
+          name: 'HESTO',
+          address: 'ul. Nowoczesna 1, 01-123 Łódź',
+          phone: 'tel. 123 456 789',
+          email: 'info@hesto.pl',
+        },
+      },
     },
     pl: {
       menu: {
         home: 'Strona główna',
         about: 'O nas',
-        services: 'Realizacje',
+        offer: 'Oferta',
+        projects: 'Realizacje',
         contact: 'Kontakt',
         'project-pricing': 'Wycena projektu',
       },
       links: {
         home: '/',
         about: '/#o-nas',
-        services: '/#realizacje',
+        offer: '/#oferta',
+        projects: '/#realizacje',
         contact: '/#kontakt',
         'project-pricing': '/wycena-projektu',
       },
@@ -309,7 +373,7 @@ export default defineI18nConfig(() => ({
           },
         },
       },
-      services: {
+      projects: {
         title: 'Realizacje',
         subtitle:
           'Przedstawiamy wybrane projekty, które realizowaliśmy dla naszych klientów. Każdy z nich to indywidualnie dopasowane rozwiązanie, odpowiadające na specyficzne potrzeby branży i użytkowników. Dzięki naszym zaawansowanym technologiom oraz dedykowanemu podejściu, pomagamy firmom osiągać lepsze rezultaty i budować przewagę konkurencyjną.',
@@ -342,6 +406,66 @@ export default defineI18nConfig(() => ({
         shortText:
           'Wznieś swoją firmę na wyższy poziom dzięki dostosowanym, nowoczesnym rozwiązaniom, które podnoszą wartość marki i usprawniają operacje. Specjalizujemy się w tworzeniu transformacji cyfrowych, które przynoszą wymierne rezultaty.',
         buttonLabel: 'Wycena projektu',
+      },
+      contactForm: {
+        heading: 'Kontakt',
+        subheading:
+          'Jeśli masz jakiekolwiek pytania dotyczące naszej oferty lub chcesz dowiedzieć się więcej o naszych usługach, skontaktuj się z nami. Jesteśmy do Twojej dyspozycji i chętnie pomożemy w wyborze najlepszych rozwiązań dla Twojej firmy.',
+        fields: {
+          name: 'Imię i nazwisko',
+          email: 'Adres e-mail',
+          phone: 'Numer telefonu',
+          messageType: 'Rodzaj wiadomości',
+          messageTitle: 'Tytuł',
+          messageContent: 'Treść',
+        },
+        messageTypes: {
+          quoteInquiry: 'Zapytanie ofertowe',
+          supportRequest: 'Prośba o wsparcie',
+          generalQuestion: 'Pytanie ogólne',
+          feedback: 'Opinie i sugestie',
+          partnershipInquiry: 'Zapytanie o współpracę',
+          technicalIssue: 'Problem techniczny',
+        },
+        exampleTitle: 'Zapytnie dot. stworzenia strony internetowej dla lokalnej firmy',
+        buttons: {
+          clear: 'Wyczyść',
+          send: 'Wyślij',
+        },
+        checkbox:
+          'Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z polityką prywatności w celu otrzymania odpowiedzi na moje zapytanie oraz dalszego kontaktu związanego z moim zapytaniem.',
+      },
+      footer: {
+        navigation: {
+          home: {
+            link: '/',
+            text: 'Strona główna',
+          },
+          about: {
+            link: '/#o-nas',
+            text: 'O nas',
+          },
+          offer: {
+            link: '/#oferta',
+            text: 'Oferta',
+          },
+          projects: {
+            link: '/#realizacje',
+            text: 'Realizacje',
+          },
+          contact: {
+            link: '/#kontakt',
+            text: 'Kontakt',
+          },
+        },
+        copyright: 'Copyright 2024 HESTO. Wszelkie prawa zastrzeżone.',
+        cookies: 'Strona korzysta z plików cookies zgodnie z polityką prywatności.',
+        companyDetails: {
+          name: 'HESTO',
+          address: 'ul. Nowoczesna 1, 01-123 Łódź',
+          phone: 'tel. 123 456 789',
+          email: 'info@hesto.pl',
+        },
       },
     },
   },

@@ -5,9 +5,10 @@
     <HeroSection />
     <AboutSection />
     <OfferSection />
-    <div class="-mt-10 min-h-screen rounded-3xl bg-white pt-16 shadow-2xl">
-      <ServicesSection />
+    <div class="relative z-20 -mt-10 rounded-3xl bg-white pt-16 shadow-2xl">
+      <ProjectsSection />
       <ProjectPricingSection />
+      <ContactSection />
     </div>
   </main>
 </template>

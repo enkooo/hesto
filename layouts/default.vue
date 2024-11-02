@@ -4,5 +4,6 @@
   <div class="font-primary">
     <BaseNavigation />
     <slot />
+    <BaseFooter />
   </div>
 </template>

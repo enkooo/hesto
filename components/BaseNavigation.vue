@@ -4,7 +4,8 @@ const { t } = useI18n()
 const MENU_ITEMS = computed(() => [
   { text: t('menu.home'), path: t('links.home') },
   { text: t('menu.about'), path: t('links.about') },
-  { text: t('menu.services'), path: t('links.services') },
+  { text: t('menu.offer'), path: t('links.offer') },
+  { text: t('menu.projects'), path: t('links.projects') },
   { text: t('menu.contact'), path: t('links.contact') },
 ])
 
@@ -33,7 +34,7 @@ function onToggleMenu() {
         :class="{ 'left-[0%]': isOpen }"
       >
         <ul
-          class="flex flex-col gap-8 py-12 md:flex-row md:items-center md:gap-4 md:py-0 lg:gap-12"
+          class="flex flex-col gap-8 py-12 text-sm md:flex-row md:items-center md:gap-4 md:py-0 lg:gap-12 lg:text-base"
         >
           <li
             v-for="item in MENU_ITEMS"
@@ -47,7 +48,7 @@ function onToggleMenu() {
               {{ item.text }}
             </NuxtLinkLocale>
           </li>
-          <li class="block md:hidden">
+          <li class="block hover:underline md:hidden">
             <NuxtLinkLocale to="/project-pricing">
               {{ $t('menu.project-pricing') }}
             </NuxtLinkLocale>
@@ -61,10 +62,7 @@ function onToggleMenu() {
             to="/project-pricing"
             class="hidden md:block"
           >
-            <Button
-              size="lg"
-              variant="secondary"
-            >
+            <Button variant="secondary">
               {{ $t('menu.project-pricing') }}
             </Button>
           </NuxtLinkLocale>
