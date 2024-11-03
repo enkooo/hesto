@@ -60,8 +60,23 @@
             <p>{{ $t('footer.companyDetails.address') }}</p>
           </div>
           <div>
-            <p>{{ $t('footer.companyDetails.phone') }}</p>
-            <p>{{ $t('footer.companyDetails.email') }}</p>
+            <p>
+              <a
+                class="hover:underline"
+                :href="`tel:${$t('footer.companyDetails.phone.number')}`"
+              >
+                {{ $t('footer.companyDetails.phone.label') }}
+                {{ $t('footer.companyDetails.phone.number') }}
+              </a>
+            </p>
+            <p>
+              <a
+                class="hover:underline"
+                :href="`mailto:${$t('footer.companyDetails.email')}`"
+              >
+                {{ $t('footer.companyDetails.email') }}
+              </a>
+            </p>
           </div>
         </div>
       </div>

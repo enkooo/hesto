@@ -230,8 +230,11 @@ export default defineI18nConfig(() => ({
         companyDetails: {
           name: 'HESTO',
           address: 'ul. Nowoczesna 1, 01-123 Łódź',
-          phone: 'tel. 123 456 789',
-          email: 'info@hesto.pl',
+          phone: {
+            number: '123-456-789',
+            label: 'tel.',
+          },
+          email: "info{'@'}hesto.pl",
         },
       },
     },
@@ -463,8 +466,11 @@ export default defineI18nConfig(() => ({
         companyDetails: {
           name: 'HESTO',
           address: 'ul. Nowoczesna 1, 01-123 Łódź',
-          phone: 'tel. 123 456 789',
-          email: 'info@hesto.pl',
+          phone: {
+            number: '123-456-789',
+            label: 'tel.',
+          },
+          email: "info{'@'}hesto.pl",
         },
       },
     },

@@ -59,7 +59,7 @@ function onToggleMenu() {
         <div class="gap-1 md:flex md:items-center">
           <LangSwitcher />
           <NuxtLinkLocale
-            to="/project-pricing"
+            to="/wycena-projektu"
             class="hidden md:block"
           >
             <Button variant="secondary">

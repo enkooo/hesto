@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         name: 'Polski',
       },
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'pl',
     customRoutes: 'config',
     pages: {
       'project-pricing': {
