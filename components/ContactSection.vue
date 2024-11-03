@@ -1,5 +1,17 @@
 <script setup lang="ts">
 import * as z from 'zod'
+import { Button } from '@/components/ui/button'
+import { useToast } from '@/components/ui/toast/use-toast'
+
+interface FormValues {
+  name: string
+  email: string
+  phone: string
+  messageType: string
+  messageTitle: string
+  messageContent: string
+  acceptTerms: boolean
+}
 
 const { t } = useI18n()
 
@@ -11,6 +23,7 @@ const Messages: [string, ...string[]] = [
   t('contactForm.messageTypes.partnershipInquiry'),
   t('contactForm.messageTypes.technicalIssue'),
 ]
+
 const phoneRegex = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/)
 
 const schema = z.object({
@@ -55,7 +68,7 @@ const schema = z.object({
     .min(10, {
       message: t('contactForm.messages.messageContentMin'),
     })
-    .max(160, {
+    .max(2000, {
       message: t('contactForm.messages.messageContentMax'),
     }),
 
@@ -68,8 +81,37 @@ const schema = z.object({
     }),
 })
 
-function onSubmit(values: Record<string, any>) {
-  console.log('values', values)
+const mail = useMail()
+const { toast } = useToast()
+const resetButton = ref<InstanceType<typeof Button> | null>(null)
+
+function onSubmit(values: FormValues) {
+  mail
+    .send({
+      from: values.email,
+      subject: values.messageTitle,
+      text: `
+      Name: ${values.name}
+      Email: ${values.email}
+      Phone: ${values.phone}
+      Message Type: ${values.messageType}
+      Message Title: ${values.messageTitle}
+      Message Content: ${values.messageContent}
+    `,
+    })
+    .then(() => {
+      toast({
+        description: t('contactForm.messages.messageSuccessSent'),
+      })
+
+      resetButton.value?.$el.click()
+    })
+    .catch(() => {
+      console.error('Error sending message')
+      toast({
+        description: t('contactForm.messages.messageErrorSent'),
+      })
+    })
 }
 </script>
 
@@ -129,6 +171,7 @@ function onSubmit(values: Record<string, any>) {
 
         <div class="flex gap-3 md:ml-auto md:w-[450px]">
           <Button
+            ref="resetButton"
             class="w-full bg-[#d7e9e8] text-[#0f736b] hover:bg-[#cae2e1]"
             type="reset"
           >
