@@ -186,6 +186,22 @@ export default defineI18nConfig(() => ({
           messageTitle: 'Title',
           messageContent: 'Content',
         },
+        messages: {
+          nameRequired: 'Name and Surname is required.',
+          nameMin: 'Name and Surname must be at least 2 characters.',
+          invalidEmail: 'This is not a valid email.',
+          invalidNumber: 'Invalid Number!',
+          messageTitleRequired: 'Message title is required.',
+          messageTitleMin: 'Message title must be at least 2 characters.',
+          messageContentMin: 'Message content must be at least 10 characters.',
+          messageContentMax: 'Message content must not be longer than 160 characters.',
+          acceptTerms: 'You must accept the terms.',
+          messageTypeRequired: 'Message type is required.',
+          emailRequired: 'Email is required.',
+          phoneRequired: 'Phone number is required.',
+          messageContentRequired: 'Message content is required.',
+          acceptTermsRequired: 'You must accept the terms.',
+        },
         messageTypes: {
           quoteInquiry: 'Quote Inquiry',
           supportRequest: 'Support Request',
@@ -199,8 +215,10 @@ export default defineI18nConfig(() => ({
           clear: 'Clear',
           send: 'Send',
         },
-        checkbox:
-          'I consent to the processing of my personal data in accordance with the privacy policy in order to receive a response to my inquiry and further contact related to my request.',
+        checkbox: {
+          label: 'Consent to personal data processing',
+          text: 'I consent to the processing of my personal data in accordance with the privacy policy in order to receive a response to my inquiry and further contact related to my request.',
+        },
       },
       footer: {
         navigation: {
@@ -422,6 +440,22 @@ export default defineI18nConfig(() => ({
           messageTitle: 'Tytuł',
           messageContent: 'Treść',
         },
+        messages: {
+          nameRequired: 'Imię i nazwisko jest wymagane.',
+          nameMin: 'Imię i nazwisko musi mieć co najmniej 2 znaki.',
+          invalidEmail: 'To nie jest prawidłowy email.',
+          invalidNumber: 'Nieprawidłowy numer!',
+          messageTitleRequired: 'Tytuł wiadomości jest wymagany.',
+          messageTitleMin: 'Tytuł wiadomości musi mieć co najmniej 2 znaki.',
+          messageContentMin: 'Treść wiadomości musi mieć co najmniej 10 znaków.',
+          messageContentMax: 'Treść wiadomości nie może być dłuższa niż 160 znaków.',
+          acceptTerms: 'Musisz zaakceptować warunki.',
+          messageTypeRequired: 'Rodzaj wiadomości jest wymagany.',
+          emailRequired: 'Adres e-mail jest wymagany.',
+          phoneRequired: 'Numer telefonu jest wymagany.',
+          messageContentRequired: 'Treść wiadomości jest wymagana.',
+          acceptTermsRequired: 'Musisz zaakceptować warunki.',
+        },
         messageTypes: {
           quoteInquiry: 'Zapytanie ofertowe',
           supportRequest: 'Prośba o wsparcie',
@@ -435,8 +469,10 @@ export default defineI18nConfig(() => ({
           clear: 'Wyczyść',
           send: 'Wyślij',
         },
-        checkbox:
-          'Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z polityką prywatności w celu otrzymania odpowiedzi na moje zapytanie oraz dalszego kontaktu związanego z moim zapytaniem.',
+        checkbox: {
+          label: 'Zgoda na przetwarzanie danych osobowych',
+          text: 'Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z polityką prywatności w celu otrzymania odpowiedzi na moje zapytanie oraz dalszego kontaktu związanego z moim zapytaniem.',
+        },
       },
       footer: {
         navigation: {

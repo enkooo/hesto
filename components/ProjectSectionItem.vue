@@ -20,6 +20,7 @@ defineProps<{
         :src="imgSrc"
         :alt="title"
         class="rounded-xl"
+        format="webp"
       />
     </div>
     <div class="flex flex-col gap-8">

@@ -45,8 +45,23 @@
         <div class="flex w-1/2 flex-col gap-3 md:hidden">
           <p>{{ $t('footer.companyDetails.name') }}</p>
           <p>{{ $t('footer.companyDetails.address') }}</p>
-          <p>{{ $t('footer.companyDetails.phone') }}</p>
-          <p>{{ $t('footer.companyDetails.email') }}</p>
+          <p>
+            <a
+              class="hover:underline"
+              :href="`tel:${$t('footer.companyDetails.phone.number')}`"
+            >
+              {{ $t('footer.companyDetails.phone.label') }}
+              {{ $t('footer.companyDetails.phone.number') }}
+            </a>
+          </p>
+          <p>
+            <a
+              class="hover:underline"
+              :href="`mailto:${$t('footer.companyDetails.email')}`"
+            >
+              {{ $t('footer.companyDetails.email') }}
+            </a>
+          </p>
         </div>
       </div>
       <div class="mt-10 text-center text-xs md:mt-0">
