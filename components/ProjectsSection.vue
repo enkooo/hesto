@@ -7,7 +7,7 @@ const PROJECTS_SECTION_ITEMS = computed(() => [
     title: t('projects.items.grocero.title'),
     subtitle: t('projects.items.grocero.subtitle'),
     logoSrc: '/img/grocero-logo.png',
-    imgSrc: '/img/food-planner-project.png',
+    imgSrc: '/img/grocero-project.jpg',
     description: t('projects.items.grocero.description'),
     buttonLabel: t('projects.items.grocero.buttonLabel'),
   },

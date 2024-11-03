@@ -79,7 +79,7 @@ const BENEFIT_SECTION_ITEMS = computed(() => [
       </div>
       <AboutImages class="xl:row-span-2" />
       <div
-        class="flex flex-col gap-8 md:col-start-1 md:col-end-3 md:row-start-4 md:grid md:grid-cols-2 md:grid-rows-2 xl:col-start-2 xl:row-start-4"
+        class="flex flex-col gap-8 md:col-start-1 md:col-end-3 md:row-start-4 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4 xl:col-start-2 xl:row-start-4"
       >
         <AboutFeatureCard
           v-for="feature in FEATURE_SECTION_ITEMS"

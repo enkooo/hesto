@@ -19,7 +19,7 @@ defineProps<{
       <NuxtImg
         :src="imgSrc"
         :alt="title"
-        class="rounded-xl"
+        class="w-full rounded-xl"
         format="webp"
       />
     </div>

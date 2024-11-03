@@ -105,6 +105,9 @@ function onSubmit(values: Record<string, any>) {
           messageContent: {
             label: $t('contactForm.fields.messageContent'),
             component: 'textarea',
+            inputProps: {
+              rows: 8,
+            } as unknown as Record<string, any>,
           },
           acceptTerms: {
             label: $t('contactForm.checkbox.label'),
