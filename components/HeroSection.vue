@@ -48,7 +48,7 @@ const onScrollDown = () => {
       <div
         class="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-12 px-4 text-center"
       >
-        <h1 class="-mt-10 text-5xl font-bold lg:text-[4rem]">
+        <h1 class="-mt-10 px-5 text-5xl font-bold lg:text-[4rem]">
           {{ $t('hero.title.start') }}
           <span class="text-primary">{{ $t('hero.title.highlight') }}</span>
           {{ $t('hero.title.end') }}
