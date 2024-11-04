@@ -1,7 +1,9 @@
 <template>
-  <div class="font-plus-jakarta">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <DelayHydration>
+    <div class="font-plus-jakarta">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </div>
+  </DelayHydration>
 </template>
