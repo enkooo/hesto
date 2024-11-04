@@ -8,7 +8,7 @@ const onScrollDown = () => {
 </script>
 
 <template>
-  <div class="relative overflow-hidden bg-hero-pattern bg-cover">
+  <div class="relative overflow-hidden bg-cover">
     <div
       class="container flex h-[calc(100dvh-40px)] max-w-7xl flex-col items-center justify-center gap-12 md:text-center"
     >
@@ -58,15 +58,15 @@ const onScrollDown = () => {
         />
       </Button>
     </div>
-    <NuxtImg
-      src="/img/bacground-bubble.svg"
-      alt=""
-      class="absolute -bottom-1/2 -left-1/2 -z-10 size-full"
+    <BaseBubble
+      :width="1000"
+      :height="1000"
+      class="absolute left-0 top-full -z-10 -translate-x-1/2 -translate-y-1/2 opacity-70"
     />
-    <NuxtImg
-      src="/img/bacground-bubble.svg"
-      alt=""
-      class="absolute -right-1/3 -top-1/3 -z-10 size-full"
+    <BaseBubble
+      :width="1000"
+      :height="1000"
+      class="absolute left-full top-0 -z-10 -translate-x-1/2 -translate-y-1/2 opacity-70"
     />
   </div>
 </template>

@@ -49,7 +49,7 @@ function onToggleMenu() {
             </NuxtLinkLocale>
           </li>
           <li class="block hover:underline md:hidden">
-            <NuxtLinkLocale to="/project-pricing">
+            <NuxtLinkLocale to="/wycena-projektu">
               {{ $t('menu.project-pricing') }}
             </NuxtLinkLocale>
           </li>
