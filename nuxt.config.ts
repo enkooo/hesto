@@ -30,6 +30,7 @@ export default defineNuxtConfig({
       },
     ],
     'nuxt-delay-hydration',
+    '@nuxthub/core',
   ],
 
   delayHydration: {
