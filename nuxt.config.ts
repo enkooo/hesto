@@ -29,7 +29,12 @@ export default defineNuxtConfig({
         },
       },
     ],
+    'nuxt-delay-hydration',
   ],
+
+  delayHydration: {
+    mode: 'init',
+  },
 
   typescript: {
     typeCheck: true,
