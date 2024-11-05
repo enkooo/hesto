@@ -11,7 +11,7 @@
     "lint": "npm run lint:eslint && npm run lint:prettier",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier . --check",
-    "lintfix": "eslint . --fix && prettier --write --list-different ."
+    "lintfix": "eslint . --fix --ignore-pattern 'components/ui/**' && prettier --write --list-different . --ignore-path .prettierignore"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
