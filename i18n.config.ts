@@ -65,8 +65,13 @@ export default defineI18nConfig(() => ({
         },
       },
       whyChooseUs: {
-        heading:
-          'Why <span class="text-primary">you</span> should <span class="text-primary">choose</span> us?',
+        heading: {
+          part1: 'Why',
+          highlight1: 'you',
+          part2: 'should',
+          highlight2: 'choose',
+          part3: 'us?',
+        },
         description:
           'We explain why we are the best choice for your business. With us, you get comprehensive service, highest quality, and satisfaction guarantee.',
         values: {
@@ -169,7 +174,11 @@ export default defineI18nConfig(() => ({
         },
       },
       projectPricing: {
-        heading: 'Modernize Your <span class="text-primary">Business</span>!',
+        heading: {
+          part1: 'Modernize Your ',
+          highlight: 'Business',
+          part2: '!',
+        },
         shortText:
           'Elevate your business to the next level with tailored, modern solutions that enhance brand value and streamline operations. We specialize in creating digital transformations that deliver measurable results.',
         buttonLabel: 'Project Pricing',
@@ -321,8 +330,13 @@ export default defineI18nConfig(() => ({
         },
       },
       whyChooseUs: {
-        heading:
-          'Dlaczego <span class="text-primary">warto</span> nas <span class="text-primary">wybrać</span>?',
+        heading: {
+          part1: 'Dlaczego',
+          highlight1: 'warto',
+          part2: 'nas',
+          highlight2: 'wybrać',
+          part3: '?',
+        },
         description:
           'Wyjaśniamy dlaczego jesteśmy najlepszym wyborem dla Twojego biznesu. Z nami otrzymasz kompleksową obsługę, najwyższą jakość usług i gwarancję zadowolenia.',
         values: {
@@ -425,7 +439,11 @@ export default defineI18nConfig(() => ({
         },
       },
       projectPricing: {
-        heading: 'Unowocześnij swój <span class="text-primary">biznes</span>!',
+        heading: {
+          part1: 'Unowocześnij swój ',
+          highlight: 'biznes',
+          part2: '!',
+        },
         shortText:
           'Wznieś swoją firmę na wyższy poziom dzięki dostosowanym, nowoczesnym rozwiązaniom, które podnoszą wartość marki i usprawniają operacje. Specjalizujemy się w tworzeniu transformacji cyfrowych, które przynoszą wymierne rezultaty.',
         buttonLabel: 'Wycena projektu',
