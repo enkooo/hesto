@@ -16,12 +16,6 @@
             </NuxtLinkLocale>
             <NuxtLinkLocale
               class="hover:underline"
-              :to="$t('footer.navigation.about.link')"
-            >
-              {{ $t('footer.navigation.about.text') }}
-            </NuxtLinkLocale>
-            <NuxtLinkLocale
-              class="hover:underline"
               :to="$t('footer.navigation.offer.link')"
             >
               {{ $t('footer.navigation.offer.text') }}

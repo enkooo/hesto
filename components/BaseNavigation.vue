@@ -3,7 +3,6 @@ const { t } = useI18n()
 
 const MENU_ITEMS = computed(() => [
   { text: t('menu.home'), path: t('links.home') },
-  { text: t('menu.about'), path: t('links.about') },
   { text: t('menu.offer'), path: t('links.offer') },
   { text: t('menu.projects'), path: t('links.projects') },
   { text: t('menu.contact'), path: t('links.contact') },

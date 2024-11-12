@@ -1,7 +1,6 @@
 export default {
   menu: {
     home: 'Home',
-    about: 'About Us',
     offer: 'Offer',
     projects: 'Projects',
     contact: 'Contact',
@@ -9,10 +8,9 @@ export default {
   },
   links: {
     home: '/',
-    about: '/#about',
     offer: '/#offer',
-    projects: '/#projects',
-    contact: '/#contact',
+    projects: '/realizacje',
+    contact: '/kontakt',
     'project-pricing': '/project-pricing',
   },
   hero: {
@@ -232,10 +230,6 @@ export default {
       home: {
         link: '/',
         text: 'Home',
-      },
-      about: {
-        link: '/#about',
-        text: 'About Us',
       },
       offer: {
         link: '/#offer',

@@ -58,26 +58,26 @@ const onScrollDown = () => {
         </p>
         <div class="flex w-full items-center justify-center gap-4">
           <NuxtLinkLocale
-            :to="$t('links.offer')"
-            class="flex-1 sm:max-w-52"
-          >
-            <Button
-              variant="secondary"
-              size="lg"
-              class="w-full"
-            >
-              {{ $t('hero.buttons.offer') }}
-            </Button>
-          </NuxtLinkLocale>
-          <NuxtLinkLocale
             :to="$t('links.projects')"
             class="flex-1 sm:max-w-52"
           >
             <Button
+              variant="primary-light"
               size="lg"
               class="w-full"
             >
               {{ $t('hero.buttons.projects') }}
+            </Button>
+          </NuxtLinkLocale>
+          <NuxtLinkLocale
+            :to="$t('links.offer')"
+            class="flex-1 sm:max-w-52"
+          >
+            <Button
+              size="lg"
+              class="w-full"
+            >
+              {{ $t('hero.buttons.offer') }}
             </Button>
           </NuxtLinkLocale>
         </div>

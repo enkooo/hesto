@@ -118,7 +118,7 @@ function onSubmit(values: FormValues) {
 <template>
   <div
     :id="$t('links.contact').split('#')[1]"
-    class="container mt-20 pb-20"
+    class="container pb-20 pt-20"
   >
     <section class="text-center">
       <h2 class="text-3xl font-bold">{{ $t('contactForm.heading') }}</h2>
@@ -172,7 +172,8 @@ function onSubmit(values: FormValues) {
         <div class="flex gap-3 md:ml-auto md:w-[450px]">
           <Button
             ref="resetButton"
-            class="w-full bg-[#d7e9e8] text-[#0f736b] hover:bg-[#cae2e1]"
+            variant="primary-light"
+            class="w-full"
             type="reset"
           >
             {{ $t('contactForm.buttons.clear') }}

@@ -1,7 +1,6 @@
 export default {
   menu: {
     home: 'Strona główna',
-    about: 'O nas',
     offer: 'Oferta',
     projects: 'Realizacje',
     contact: 'Kontakt',
@@ -9,10 +8,9 @@ export default {
   },
   links: {
     home: '/',
-    about: '/#o-nas',
     offer: '/#oferta',
-    projects: '/#realizacje',
-    contact: '/#kontakt',
+    projects: '/realizacje',
+    contact: '/kontakt',
     'project-pricing': '/wycena-projektu',
   },
   hero: {
@@ -232,10 +230,6 @@ export default {
       home: {
         link: '/',
         text: 'Strona główna',
-      },
-      about: {
-        link: '/#o-nas',
-        text: 'O nas',
       },
       offer: {
         link: '/#oferta',

@@ -58,6 +58,14 @@ export default defineNuxtConfig({
         en: '/project-pricing',
         pl: '/wycena-projektu',
       },
+      contact: {
+        en: '/contact',
+        pl: '/kontakt',
+      },
+      projects: {
+        en: '/projects',
+        pl: '/realizacje',
+      },
     },
   },
 
