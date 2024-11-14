@@ -167,6 +167,11 @@ export default {
       },
     },
   },
+  lastProject: {
+    title: 'Latest Project',
+    subtitle:
+      'We present our latest project, which we completed for our client. We created a custom-tailored solution that addresses the specific needs of the industry and its users. Thanks to our advanced approach, we helped the company achieve better results and build a competitive advantage.',
+  },
   projectPricing: {
     heading: {
       part1: 'Modernize Your ',

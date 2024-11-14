@@ -54,10 +54,6 @@ export default defineNuxtConfig({
     defaultLocale: 'pl',
     customRoutes: 'config',
     pages: {
-      'project-pricing': {
-        en: '/project-pricing',
-        pl: '/wycena-projektu',
-      },
       contact: {
         en: '/contact',
         pl: '/kontakt',

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { toTypedSchema } from '@vee-validate/zod'
+import { useForm } from 'vee-validate'
 import * as z from 'zod'
 import { Button } from '@/components/ui/button'
 import { useToast } from '@/components/ui/toast/use-toast'
@@ -14,6 +16,7 @@ interface FormValues {
 }
 
 const { t } = useI18n()
+const router = useRouter()
 
 const Messages: [string, ...string[]] = [
   t('contactForm.messageTypes.quoteInquiry'),
@@ -81,6 +84,24 @@ const schema = z.object({
     }),
 })
 
+const form = useForm({
+  validationSchema: toTypedSchema(schema),
+})
+
+watch(
+  () => router.currentRoute.value.query.q,
+  (value) => {
+    nextTick(() => {
+      if (value === 'project') {
+        form.setFieldValue('messageType', t('contactForm.messageTypes.quoteInquiry'))
+      } else {
+        form.resetField('messageType')
+      }
+    })
+  },
+  { immediate: true },
+)
+
 const mail = useMail()
 const { toast } = useToast()
 const resetButton = ref<InstanceType<typeof Button> | null>(null)
@@ -127,6 +148,7 @@ function onSubmit(values: FormValues) {
     <div class="mt-10">
       <AutoForm
         class="auto-contact-form mx-auto max-w-5xl space-y-6 md:grid md:w-full md:grid-cols-3 md:gap-6 md:space-y-0"
+        :form="form"
         :schema="schema"
         :field-config="{
           name: {
@@ -140,6 +162,9 @@ function onSubmit(values: FormValues) {
           },
           phone: {
             label: $t('contactForm.fields.phone'),
+          },
+          messageType: {
+            label: $t('contactForm.fields.messageType'),
           },
           messageTitle: {
             label: $t('contactForm.fields.messageTitle'),
@@ -160,9 +185,9 @@ function onSubmit(values: FormValues) {
         }"
         @submit="onSubmit"
       >
-        <template #acceptTerms="slotProps">
+        <template #acceptTerms="acceptTermsField">
           <div>
-            <AutoFormField v-bind="slotProps" />
+            <AutoFormField v-bind="acceptTermsField" />
             <div class="!mt-2 text-xs">
               {{ $t('contactForm.checkbox.text') }}
             </div>

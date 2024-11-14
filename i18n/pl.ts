@@ -167,6 +167,11 @@ export default {
       },
     },
   },
+  lastProject: {
+    title: 'Ostatnia realizacja',
+    subtitle:
+      'Przedstawiamy ostatni projekt, który zrealizowaliśmy dla naszego klienta. Stworzyliśmy indywidualnie dopasowane rozwiązanie, które odpowiada na specyficzne potrzeby branży i użytkowników. Dzięki naszemu zaawansowanemu podejściu, pomogliśmy firmie osiągnąć lepsze rezultaty i budować przewagę konkurencyjną.',
+  },
   projectPricing: {
     heading: {
       part1: 'Unowocześnij swój ',
