@@ -41,12 +41,6 @@ defineProps<{
         </div>
       </div>
       <p class="text-typography-gray">{{ description }}</p>
-      <Button
-        size="lg"
-        class="self-start"
-      >
-        {{ buttonLabel }}
-      </Button>
     </div>
   </div>
 </template>

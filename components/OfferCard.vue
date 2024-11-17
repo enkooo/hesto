@@ -43,7 +43,14 @@ defineProps<{
             </ul>
           </div>
           <p class="mb-10">{{ summary }}</p>
-          <Button class="mt-auto self-end">{{ $t('offer.learnMore') }}</Button>
+          <NuxtLinkLocale
+            to="/kontakt?q=project"
+            class="mt-auto self-end"
+          >
+            <Button>
+              {{ $t('offer.learnMore') }}
+            </Button>
+          </NuxtLinkLocale>
           <div
             class="absolute -bottom-20 -left-10 size-44 rotate-[70deg] rounded-xl border border-[#6276a052]"
           />
