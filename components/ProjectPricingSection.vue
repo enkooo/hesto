@@ -11,10 +11,7 @@
         >{{ $t('projectPricing.heading.part2') }}
       </h2>
       <p class="mx-auto max-w-5xl text-typography-light">{{ $t('projectPricing.shortText') }}</p>
-      <NuxtLinkLocale
-        to="/kontakt?q=project"
-        class="hidden md:block"
-      >
+      <NuxtLinkLocale to="/kontakt?q=project">
         <Button class="self-center">
           {{ $t('projectPricing.buttonLabel') }}
         </Button>
