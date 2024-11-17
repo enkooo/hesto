@@ -4,10 +4,9 @@
   <main>
     <HeroSection />
     <AboutSection />
-    <OfferSection />
-    <div class="relative z-20 -mt-10 rounded-3xl bg-white shadow-2xl">
+    <div class="relative z-20 -mt-10 rounded-3xl bg-white">
       <LastProjectSection />
-      <ProjectPricingSection class="pb-20" />
+      <ProjectPricingSection class="pb-32 pt-16" />
     </div>
   </main>
 </template>

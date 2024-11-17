@@ -8,7 +8,7 @@ export default {
   },
   links: {
     home: '/',
-    offer: '/#offer',
+    offer: '/oferta',
     projects: '/realizacje',
     contact: '/kontakt',
     'project-pricing': '/project-pricing',
@@ -139,6 +139,42 @@ export default {
       },
     },
   },
+  whyWorkWithUs: {
+    title: 'Why work with us?',
+    subtitle: 'Discover the benefits our solutions bring to your business',
+    items: {
+      quickImplementation: {
+        title: 'Quick Implementation',
+        description:
+          'Our solutions are ready for implementation, enabling quick start and first results.',
+      },
+      innovativeTechnologies: {
+        title: 'Innovative Technologies',
+        description:
+          'We use the latest technologies to provide your company with a competitive edge and operational efficiency.',
+      },
+      expertSupport: {
+        title: 'Expert Support',
+        description:
+          'Our team of experienced specialists is always ready to help you at every stage of the project.',
+      },
+      scalability: {
+        title: 'Scalability',
+        description:
+          'Our solutions grow with your business, providing flexibility and the ability to adapt to changing needs.',
+      },
+      dataSecurity: {
+        title: 'Data Security',
+        description:
+          'We prioritize the security of your data, using the highest protection and encryption standards.',
+      },
+      qualityAssurance: {
+        title: 'Quality Assurance',
+        description:
+          'Our solutions undergo rigorous testing to ensure reliability and high-quality performance.',
+      },
+    },
+  },
   projects: {
     title: 'Projects',
     subtitle:
@@ -237,15 +273,15 @@ export default {
         text: 'Home',
       },
       offer: {
-        link: '/#offer',
+        link: '/oferta',
         text: 'Offer',
       },
       projects: {
-        link: '/#projects',
+        link: '/realizacje',
         text: 'Projects',
       },
       contact: {
-        link: '/#contact',
+        link: '/kontakt',
         text: 'Contact',
       },
     },

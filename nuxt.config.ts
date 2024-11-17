@@ -62,6 +62,10 @@ export default defineNuxtConfig({
         en: '/projects',
         pl: '/realizacje',
       },
+      offer: {
+        en: '/offer',
+        pl: '/oferta',
+      },
     },
   },
 

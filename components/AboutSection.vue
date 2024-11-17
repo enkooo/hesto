@@ -53,7 +53,9 @@ const BENEFIT_SECTION_ITEMS = computed(() => [
 </script>
 
 <template>
-  <div class="relative z-10 -mt-10 rounded-3xl bg-white py-20 text-center shadow-2xl md:text-left">
+  <div
+    class="relative z-10 -mt-10 rounded-3xl bg-white pb-28 pt-20 text-center shadow-2xl md:text-left"
+  >
     <div class="container flex flex-col gap-16 md:grid md:grid-cols-2 md:gap-10">
       <h2 class="text-center text-4xl font-bold md:col-start-1 md:col-end-3">
         {{ $t('about.heading') }}

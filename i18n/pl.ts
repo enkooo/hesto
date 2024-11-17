@@ -8,7 +8,7 @@ export default {
   },
   links: {
     home: '/',
-    offer: '/#oferta',
+    offer: '/oferta',
     projects: '/realizacje',
     contact: '/kontakt',
     'project-pricing': '/wycena-projektu',
@@ -139,6 +139,42 @@ export default {
       },
     },
   },
+  whyWorkWithUs: {
+    title: 'Dlaczego warto z nami współpracować?',
+    subtitle: 'Odkryj korzyści, jakie przynoszą nasze rozwiązania dla Twojego biznesu',
+    items: {
+      quickImplementation: {
+        title: 'Szybkie wdrożenie',
+        description:
+          'Nasze rozwiązania są gotowe do implementacji, co pozwala na szybkie rozpoczęcie pracy i osiągnięcie pierwszych rezultatów.',
+      },
+      innovativeTechnologies: {
+        title: 'Innowacyjne technologie',
+        description:
+          'Wykorzystujemy najnowsze technologie, aby zapewnić Twojej firmie przewagę konkurencyjną i efektywność operacyjną.',
+      },
+      expertSupport: {
+        title: 'Wsparcie ekspertów',
+        description:
+          'Nasz zespół doświadczonych specjalistów jest zawsze gotowy, aby pomóc Ci w każdym etapie projektu.',
+      },
+      scalability: {
+        title: 'Skalowalność',
+        description:
+          'Nasze rozwiązania rosną wraz z Twoim biznesem, zapewniając elastyczność i możliwość dostosowania do zmieniających się potrzeb.',
+      },
+      dataSecurity: {
+        title: 'Bezpieczeństwo danych',
+        description:
+          'Priorytetowo traktujemy bezpieczeństwo Twoich danych, stosując najwyższe standardy ochrony i szyfrowania.',
+      },
+      qualityAssurance: {
+        title: 'Gwarancja jakości',
+        description:
+          'Nasze rozwiązania przechodzą rygorystyczne testy, aby zapewnić niezawodność i wysoką jakość działania.',
+      },
+    },
+  },
   projects: {
     title: 'Realizacje',
     subtitle:
@@ -237,15 +273,15 @@ export default {
         text: 'Strona główna',
       },
       offer: {
-        link: '/#oferta',
+        link: '/oferta',
         text: 'Oferta',
       },
       projects: {
-        link: '/#realizacje',
+        link: '/realizacje',
         text: 'Realizacje',
       },
       contact: {
-        link: '/#kontakt',
+        link: '/kontakt',
         text: 'Kontakt',
       },
     },
