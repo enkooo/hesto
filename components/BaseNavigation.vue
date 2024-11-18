@@ -26,6 +26,7 @@ function onToggleMenu() {
           alt="Hesto Logo"
           width="116"
           height="38"
+          densities="x1"
         />
       </NuxtLinkLocale>
       <div

@@ -18,6 +18,7 @@ defineProps<{
         alt=""
         width="50"
         height="50"
+        densities="x1"
       />
       <div class="absolute top-[52px] h-10 w-28 rounded-xl backdrop-blur" />
     </div>

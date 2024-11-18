@@ -9,6 +9,8 @@
         src="/img/about-image-1.webp"
         alt=""
         class="h-full w-full object-cover"
+        densities="x1"
+        sizes="128px xl:245px"
       />
     </div>
     <div
@@ -18,6 +20,8 @@
         src="/img/about-image-2.webp"
         alt=""
         class="h-full w-full object-cover"
+        densities="x1"
+        sizes="80px xl:158px"
       />
     </div>
     <div
@@ -27,6 +31,8 @@
         src="/img/about-image-3.webp"
         alt=""
         class="h-full w-full object-cover"
+        densities="x1"
+        sizes="176px xl:332px"
       />
     </div>
   </div>

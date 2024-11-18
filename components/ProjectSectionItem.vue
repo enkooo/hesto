@@ -21,6 +21,10 @@ defineProps<{
         :alt="title"
         class="w-full rounded-xl"
         format="webp"
+        width="640"
+        height="368"
+        densities="x1"
+        sizes="320px xs:440px sm:640px md:320px lg:453px xl:580px 2xl:640px"
       />
     </div>
     <div class="flex flex-col gap-8">
@@ -33,6 +37,7 @@ defineProps<{
             alt=""
             width="50"
             height="50"
+            densities="x1"
           />
         </div>
         <div>

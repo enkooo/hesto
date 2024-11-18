@@ -93,7 +93,6 @@ module.exports = {
         primary: ['Plus Jakarta Sans'],
       },
       backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.png')",
         'services-dark-gradient': 'linear-gradient(180deg, #191F2F 0%, #0C101A 100%)',
       },
     },

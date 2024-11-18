@@ -1,5 +1,5 @@
 <template>
-  <div class="font-primary">
+  <div>
     <Toaster />
     <BaseNavigation />
     <slot />

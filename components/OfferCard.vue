@@ -27,6 +27,7 @@ defineProps<{
               alt=""
               width="40"
               height="40"
+              densities="x1"
             />
           </div>
           <h3 class="text-balance text-2xl font-bold text-white">{{ title }}</h3>

@@ -91,6 +91,7 @@ const onScrollDown = () => {
             alt=""
             width="12"
             height="12"
+            densities="x1"
           />
         </Button>
       </div>
