@@ -12,23 +12,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'shadcn-nuxt',
     '@formkit/auto-animate/nuxt',
-    [
-      'nuxt-mail',
-      {
-        message: {
-          to: process.env.NUXT_MAIL_TARGET,
-        },
-        smtp: {
-          host: process.env.NUXT_MAIL_SMTP,
-          port: process.env.NUXT_MAIL_PORT,
-          secure: true,
-          auth: {
-            user: process.env.NUXT_MAIL_USERNAME,
-            pass: process.env.NUXT_MAIL_PASSWORD,
-          },
-        },
-      },
-    ],
     'nuxt-delay-hydration',
   ],
 
@@ -79,5 +62,13 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui',
+  },
+
+  runtimeConfig: {
+    public: {
+      EMAILJS_PUBLIC_KEY: process.env.NUXT_EMAILJS_PUBLIC_KEY || '',
+      EMAILJS_SERVICE_ID: process.env.NUXT_EMAILJS_SERVICE_ID || '',
+      EMAILJS_TEMPLATE_ID: process.env.NUXT_EMAILJS_TEMPLATE_ID || '',
+    },
   },
 })
