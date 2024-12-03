@@ -23,6 +23,5 @@ COPY --from=build-stage /app/.output ./.output
 # Instalacja tylko produkcyjnych zależności
 RUN npm install --production
 # Otworzenie portu na kontenerze
-EXPOSE 3001
-# Domyślne polecenie uruchamiające aplikację
+EXPOSE 3000
 CMD ["npm","run", "start"]
