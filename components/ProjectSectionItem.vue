@@ -19,10 +19,10 @@ defineProps<{
       <NuxtImg
         :src="imgSrc"
         :alt="title"
-        class="w-full rounded-xl"
+        class="w-full rounded-xl drop-shadow-sm"
         format="webp"
         width="640"
-        height="368"
+        height="388"
         densities="x1"
         sizes="320px xs:440px sm:640px md:320px lg:453px xl:580px 2xl:640px"
       />
